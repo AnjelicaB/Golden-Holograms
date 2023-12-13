@@ -1,4 +1,4 @@
-const frameCount = 105;
+const frameCount = 211;
 
 const currentFrame = index => (
     `images/cubesatScroll/animation${index.toString().padStart(3, '0')}.png`
@@ -35,7 +35,7 @@ window.onload = function() {
     
     const updateImage = index => {
       img.src = currentFrame(index);
-      context.clearRect(0, 0, canvas.width, canvas.height);
+    //   context.clearRect(0, 0, canvas.width, canvas.height);
       context.drawImage(img, 0, 0);
     //   window.requestAnimationFrame(() => updateImage(frameCount))
     }
